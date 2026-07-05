@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" />
+      <stop offset="100%" stop-color="#f53844" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0b0c10" />
+  
+  <g filter="url(#glow)">
+    <path d="M82,34 L46,34 C38,34 32,40 32,48 L32,56 C32,64 38,70 46,70 L72,70 C76.4,70 80,73.6 80,78 L80,84 C80,88.4 76.4,92 72,92 L46,92 L46,104 L72,104 C80.8,104 88,96.8 88,88 L88,78 C88,69.2 80.8,62 72,62 L46,62 C41.6,62 38,58.4 38,54 L38,48 C38,43.6 41.6,40 46,40 L82,40 L82,34 Z" fill="url(#neonGradient)"/>
+  </g>
+</svg>
